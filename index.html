@@ -1,0 +1,70 @@
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility Map at Lincoln Center</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="css/main.css?0">
+
+   <link rel="stylesheet" href="./css/styleguide.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+
+          <h1 id="page-title">Finding Accessiblity Features at Lincoln Center for the Performing Arts</h1>
+        </div>
+      </div>
+      
+      <div id="instructions">Do you want to find out if there are any accessible features at the Lincoln Center Campus? Zoom in to see a map of elevators, escalators and accessible entrances at the Lincoln Center for the Performing Arts.</div>
+      
+      <div id="map_wrap">
+        
+        <div id="tools"><label for="toggle_table_view" id="toggle_table_label">View Data</label>
+          <input type="checkbox" id="toggle_table_view" accesskey="v">
+          
+          <label for="toggle_street_view" id="toggle_street_label">Toggle Street View</label>
+          <input type="checkbox" id="toggle_street_view" onclick="toggleStreetView();" accesskey="t">
+        </div>
+        
+        <div id="my_map_wrap">
+          <div id="mymap"></div>
+          <div id="pano" hidden></div>
+        </div>
+        
+        <div id="table_view" hidden>
+          <table border="0" cellpadding="0" cellspacing="0">
+            <caption><strong>Accessibility at Lincoln Center</strong></caption>
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col" id="table_view_distance_col" hidden>Distance, miles</th>
+                <th scope="col">Location</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div id="autocomplete-status" role="status" aria-live="assertive" class="sr-only"></div>
+      </div>
+      <div id="floating-panel">
+        <!-- <input type="button" value="Toggle Street View" onclick="toggleStreetView();" accesskey="t"> -->
+      </div>
+    </div>
+    </main>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF-0XKnIolLVsJZBXw4JWmoij1kdvxPEg&libraries=places"></script>
+    <script src="js/infobubble.js"></script>
+    <script src="js/markerclusterer.js?2"></script>
+    <script src="js/script.js?4"></script>
+  </body>
+  
+  </html>
+  
+  
