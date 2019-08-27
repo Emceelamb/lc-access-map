@@ -21,7 +21,7 @@ var myMarkers = [
   [40.77360313, -73.98384869, "Elevator - Lincoln Center Theater, North East"],
   [40.77270532, -73.9857316, "Accessible Entrance - Damrosch Park, West"],
   [40.77125092, -73.98315132, "Accessible Entrance - David Rubenstein Atrium, West"],
-  [40.77115342, -73.98281336, "Accessible Entrance - David Rubenstein Atrium"],
+  [40.77115342, -73.98281336, "Accessible Entrance (Tickets) - David Rubenstein Atrium"],
   [40.7709056, -73.98240566, "Accessible Entrance - David Rubenstein Atrium, East"],
   [40.77084466, -73.98275971, "Accessible Entrance - David Rubenstein Atrium, South"],
   [40.768728, -73.98239493, "Accessible Entrance - Frederick P. Rose Hall, North East"],
